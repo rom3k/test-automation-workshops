@@ -11,8 +11,10 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng build --prod --base-href https://rom3k.github.io/test-automation-workshops/
 - ng lint
+- ng test --watch=false --broswers=ChromeHeadless
+- ng build --prod --base-href https://rom3k.github.io/test-automation-workshops/
+
 deploy:
   provider: pages
   skip_cleanup: true
