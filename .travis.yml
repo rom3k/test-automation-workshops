@@ -11,7 +11,7 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng build --prod --base-href https://bamanczak.github.io/pesel/
+- ng build --prod --base-href https://rom3k.github.io/test-automation-workshops/
 - ng lint
 deploy:
   provider: pages
